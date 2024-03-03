@@ -1,0 +1,52 @@
+<template>
+    <section class="start_page">
+        <div class="container container_start_page" :style="{height: clientHeight + 'px'}">
+            <div class="start_page_main">
+                <h1>YAFT</h1>
+                <p>    Наш сервис предоставляет уникальную возможность планировать туристические походы в любой точке мира. Мы поможем вам выбрать маршрут, подобрать необходимое снаряжение, а также предоставим информацию о достопримечательностях и культурных событиях в выбранном регионе.
+                <br><br>Доверьтесь YAFT и откройте для себя новые горизонты вместе с нами!</p>
+            </div> 
+
+            <div class="start_page_footer_block">
+                <div class="start_page_footer">
+                <p>Начнём путешествие?</p>
+                <button class="btn_go" @click="routeTo()">
+                    <svg id="svg1" width="42" height="31" viewBox="0 0 42 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 16.0769H24.2055C24.7578 16.0769 25.2055 15.6292 25.2055 15.0769V3.44686C25.2055 2.55139 26.2921 2.10732 26.9192 2.74647L39.2578 15.3205C39.6606 15.731 39.635 16.3958 39.2019 16.7741L25.2055 29" stroke-width="3"/>
+                    </svg>
+                </button>
+                </div>  
+            </div>
+            
+        </div>
+    </section>
+</template>
+
+
+<script>
+export default {
+    name: "startPage",
+
+    data() {
+        return {
+            clientHeight: 800,      
+        }
+    },
+
+    methods: {
+        routeTo(){
+            this.$router.push('/route')
+        }
+    },
+
+    mounted() {
+        this.clientHeight =  document.documentElement.clientHeight;
+        
+    }
+    
+}
+</script>
+
+<style lang="scss">
+    
+</style>

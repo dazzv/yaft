@@ -1,0 +1,136 @@
+[
+    [ 
+        {
+            "name": "Самарская набережная",
+            "icon": "/img/type/cultural/samara/naberezhnaya.png",
+            "location": "Самара",
+            "type": "Достопримечательность"
+        },
+        {
+            "name": "Дача купца Соколова",
+            "icon": "/img/type/cultural/samara/dacha_kupsa.png",
+            "location": "Самара",
+            "type": "Достопримечательность"
+        },
+        {
+            "name": "Площадь Революции",
+            "icon": "/img/type/cultural/samara/ploshad.png",
+            "location": "Самара",
+            "type": "Достопримечательность"
+        },
+        {
+            "name": "Казанский Кремль",
+            "icon": "/img/type/cultural/kazan/kazan_kreml.png",
+            "location": "Казань",
+            "type": "Достопримечательность"
+        },
+        {
+            "name": "Дворец земледельцев",
+            "icon": "/img/type/cultural/kazan/dvorets.png",
+            "location": "Казань",
+            "type": "Достопримечательность"
+        },
+        {
+            "name": "Спасская башня",
+            "icon": "/img/type/cultural/kazan/spasskaya_bashnya.png",
+            "location": "Казань",
+            "type": "Достопримечательность"
+        } 
+    ],
+    [
+        {
+            "name": "Поход к Шавлинским озёрам через долину Маашей",
+            "icon": "/img/type/hiking/barnaul/shavlinskoe_ozera.jpeg",
+            "location": "Барнаул",
+            "type": "Маршрут"
+        },
+        {
+            "name": "Большое Алтайское путешествие",
+            "icon": "/img/type/hiking/barnaul/bolshoe_puteshestvie.jpg",
+            "location": "Барнаул",
+            "type": "Маршрут"
+        },
+        {
+            "name": "к Белухе по Ороктойской тропе",
+            "icon": "/img/type/hiking/barnaul/181225_350x280.jpg",
+            "location": "Барнаул",
+            "type": "Маршрут"
+        },
+        {
+            "name": "Шавлинские озёра и Чуйский хребет",
+            "icon": "/img/type/hiking/barnaul/189789_350x280.jpeg",
+            "location": "Барнаул",
+            "type": "Маршрут"
+        },
+        {
+            "name": "Южное цветочное путешествие: подснежники Крыма",
+            "icon": "/img/type/hiking/simferopol/krim.jpg",
+            "location": "Симферополь",
+            "type": "Маршрут"
+        },
+        {
+            "name": "Голубые просторы Судака",
+            "icon": "/img/type/hiking/simferopol/sudak.jpg",
+            "location": "Симферополь",
+            "type": "Маршрут"
+        },
+        {
+            "name": "Горы, пещеры и водопады Крыма",
+            "icon": "/img/type/hiking/simferopol/gori_krim.jpg",
+            "location": "Симферополь",
+            "type": "Маршрут"
+        },
+        {
+            "name": "Сплав на байдарках по Астраханской области",
+            "icon": "/img/type/hiking/astrakhan/splav_astrakhan.jpg",
+            "location": "Астрахань",
+            "type": "Маршрут"
+        },
+        {
+            "name": "Путешествие по Астраханской области",
+            "icon": "/img/type/hiking/astrakhan/puteshestvie_po_astrakhan.jpg",
+            "location": "Астрахань",
+            "type": "Маршрут"
+        }
+    ],
+    [
+        {
+            "name": "Ботанический сад",
+            "icon": "/img/type/eco/samara/botanicheskiy.png",
+            "location": "Самара",
+            "type": "Заповедники, лесопарки"
+        },
+        {
+            "name": "Жигулёвский государственный природный биосферный заповедник",
+            "icon": "/img/type/eco/samara/zigulevskiy_zapovednik.png",
+            "location": "Самара",
+            "type": "Заповедники, лесопарки"
+        },
+        {
+            "name": "Загородный парк",
+            "icon": "/img/type/eco/samara/zagorodniy.png",
+            "location": "Самара",
+            "type": "Заповедники, лесопарки"
+        }
+    ],
+    [
+        {
+            "name": "Велопоход в арт-парк Никола-Ленивец",
+            "icon": "/img/type/cycle/moscow/art_park.jpg",
+            "location": "Москва",
+            "type": "Вело-маршрут"
+        },
+        {
+            "name": "Велопоход: приокские просторы",
+            "icon": "/img/type/cycle/moscow/priokskie_prostori.jpg",
+            "location": "Москва",
+            "type": "Вело-маршрут"
+        },
+        {
+            "name": "По Тверской губернии на велосипеде",
+            "icon": "/img/type/cycle/moscow/tberskoy_gubernii.jpg",
+            "location": "Москва",
+            "type": "Вело-маршрут"
+        }
+    ]
+]

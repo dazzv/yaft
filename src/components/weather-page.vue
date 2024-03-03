@@ -1,0 +1,71 @@
+<template >
+    <section class="weather_page">
+        <div class="block_name big_block wether_big_block">
+            <div class="container">
+                        <h1 class="page_title">{{fullTravelData.city}}
+                            <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.25 3.91998C15.725 2.5276 13.6567 1.74536 11.5 1.74536C9.34333 1.74536 7.27499 2.5276 5.75 3.91998C4.225 5.31237 3.36827 7.20085 3.36827 9.16998C3.36827 11.1391 4.225 13.0276 5.75 14.42L10.8004 19.04C10.8895 19.122 10.9955 19.1871 11.1123 19.2315C11.2291 19.2759 11.3543 19.2988 11.4808 19.2988C11.6073 19.2988 11.7326 19.2759 11.8494 19.2315C11.9662 19.1871 12.0722 19.122 12.1612 19.04L17.25 14.3762C18.7686 12.9896 19.6218 11.109 19.6218 9.14811C19.6218 7.18719 18.7686 5.30658 17.25 3.91998ZM15.8796 13.125L11.5 17.1412L7.12042 13.125C6.25518 12.3343 5.66612 11.3271 5.42771 10.2307C5.18929 9.1344 5.31222 7.99814 5.78096 6.96558C6.24969 5.93302 7.04319 5.05053 8.06114 4.42965C9.0791 3.80877 10.2758 3.47739 11.5 3.47739C12.7242 3.47739 13.9209 3.80877 14.9389 4.42965C15.9568 5.05053 16.7503 5.93302 17.219 6.96558C17.6878 7.99814 17.8107 9.1344 17.5723 10.2307C17.3339 11.3271 16.7448 12.3343 15.8796 13.125ZM8.625 6.48373C7.85135 7.19228 7.41692 8.15198 7.41692 9.15248C7.41692 10.153 7.85135 11.1127 8.625 11.8212C9.19977 12.3469 9.93177 12.7059 10.7292 12.8532C11.5266 13.0005 12.3538 12.9295 13.1072 12.6491C13.8606 12.3687 14.5065 11.8915 14.9639 11.2772C15.4213 10.6629 15.6698 9.93899 15.6783 9.19623C15.6827 8.70029 15.578 8.20858 15.3706 7.7502C15.1632 7.29181 14.8573 6.87604 14.4708 6.52748C14.091 6.17274 13.6381 5.89008 13.1382 5.69577C12.6383 5.50145 12.1012 5.39932 11.5579 5.39526C11.0146 5.39119 10.4757 5.48527 9.97239 5.67207C9.46904 5.85888 9.01113 6.13472 8.625 6.48373ZM13.1196 10.5787C12.7564 10.9154 12.2765 11.1264 11.7617 11.1757C11.247 11.225 10.7296 11.1095 10.2978 10.849C9.86599 10.5885 9.54672 10.1992 9.39455 9.74756C9.24237 9.29592 9.26675 8.81004 9.4635 8.37299C9.66025 7.93595 10.0172 7.57487 10.4732 7.3515C10.9293 7.12813 11.4562 7.05634 11.9638 7.1484C12.4714 7.24046 12.9282 7.49065 13.2562 7.8562C13.5841 8.22175 13.7628 8.67996 13.7617 9.15248C13.7477 9.69259 13.4996 10.2056 13.0717 10.5787H13.1196Z" fill="white"/>
+                            <path d="M6.5 20.125H16.5" stroke="#5F977F"/>
+                            </svg>
+                        </h1>
+                        <h5 class="page_text">{{fullTravelData.localeTravelDate}} - {{fullTravelData.localeTravelEndDate}}</h5>
+                        <h3 class="block_title">Сейчас в этом городе:<div class="block_underscore"></div></h3>
+            </div>
+        </div>
+        <div class="container"> 
+            <div class="weather_page_main" :style="{height: (clientHeight - 140) + 'px'}">
+                <div class="weather_today">
+                    <!-- {{Math.round(generalInfo.list[0].main.temp)}} -->
+                    <h1>{{fullWeatherData[0].temperature}}&deg;<span>C</span></h1>
+                    <img :src="`https://openweathermap.org/img/wn/${fullWeatherData[0].icon}.png`" alt="weather now">
+                </div>
+
+                <div class="weather_page_bg">
+                </div>
+                <!-- :class="{spaceInSelectedDays : fullTravelData.days.length < 6}" -->
+                <div class="selected_days">
+                    <div class="day"
+                        v-for="(day, index) in fullWeatherData"
+                        @key="index"
+                    >
+                        <h3>{{day.temperature}}&deg;</h3>
+                        <img :src="`https://openweathermap.org/img/wn/${day.icon}.png`" alt="weathers">
+                        <h5 class="date">{{fullTravelData.days[index]}}</h5>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+<script>
+import {mapGetters} from 'vuex'
+
+export default {
+    name: "weatherPage",
+    data() {
+        return {
+            clientHeight: 800,
+            generalInfo: [],
+            errors: [],
+        }
+    },
+
+    mounted() {
+      this.clientHeight =  document.documentElement.clientHeight;
+    },
+
+    computed: {
+        ...mapGetters ([
+            'fullTravelData',
+            'fullWeatherData'
+        ])
+
+    }
+}
+</script>
+
+<style lang="scss" src="../assets/style/styles.scss">
+    
+</style>

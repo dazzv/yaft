@@ -1,0 +1,254 @@
+[   
+    [
+        {
+            "icon": "phone.svg",
+            "title": "Мобильный телефон",
+            "clicked": false
+        },
+        {
+            "icon": "usb.svg",
+            "title": "Зарядное  устройство",
+            "clicked": false
+        },
+        {
+            "icon": "Passport.svg",
+            "title": "Заграничный паспорт",
+            "clicked": false
+        },
+        {
+            "icon": "ticket.svg",
+            "title": "Посадочный талон",
+            "clicked": false
+        },
+        {
+            "icon": "credit-card.svg",
+            "title": "Банковская карта",
+            "clicked": false
+        },
+        {
+            "icon": "cash.svg",
+            "title": "Наличные",
+            "clicked": false
+        },
+        {
+            "icon": "pods.svg",
+            "title": "Наушники",
+            "clicked": false
+        },
+        {
+            "icon": "camera.svg",
+            "title": "Набор для фото",
+            "clicked": false
+        },
+        {
+            "icon": "backpack.svg",
+            "title": "Городской рюкзак",
+            "clicked": false
+        }
+    ],
+
+    [
+        {
+            "title": "Одежда на выход",
+            "clicked": false
+        },
+        {
+            "title": "Одежда на каждый день",
+            "clicked": false
+        },
+        {
+            "title": "Уходовая косметика для лица",
+            "clicked": false
+        },
+        {
+            "title": "Средство для укладки",
+            "clicked": false
+        },
+        {
+            "title": "Шампунь и кондиционер",
+            "clicked": false
+        },
+        {
+            "title": "Зубная паста и щетка",
+            "clicked": false
+        },
+        {
+            "title": "Дезодрант",
+            "clicked": false
+        },
+        {
+            "title": "Расческа",
+            "clicked": false
+        },
+        {
+            "title": "Аптечка",
+            "clicked": false
+        }
+    ],
+    [
+        {
+            "title": "Палатка",
+            "clicked": false
+        },
+        {
+            "title": "Средства для розжига костра",
+            "clicked": false
+        },
+        {
+            "title": "Защитные средства от насекомых",
+            "clicked": false
+        },
+        {
+            "title": "Спальный мешок",
+            "clicked": false
+        },
+        {
+            "title": "Походная аптечка",
+            "clicked": false
+        },
+        {
+            "title": "Фонарь для похода",
+            "clicked": false
+        },
+        {
+            "title": "Веревка",
+            "clicked": false
+        },
+        {
+            "title": "Карта",
+            "clicked": false
+        },
+        {
+            "title": "Мешки и пакеты для продуктов",
+            "clicked": false
+        },
+        {
+            "title": "Шампунь и кондиционер",
+            "clicked": false
+        },
+        {
+            "title": "Зубная паста и щетка",
+            "clicked": false
+        },
+        {
+            "title": "Дезодрант",
+            "clicked": false
+        },
+        {
+            "title": "Расческа",
+            "clicked": false
+        },
+        {
+            "title": "Треккинговая обувь",
+            "clicked": false
+        },
+        {
+            "title": "Аптечка",
+            "clicked": false
+        }
+    ],
+    [
+        {
+            "title": "Беспламенный нагреватель",
+            "clicked": false
+        },
+        {
+            "title": "Cушеные и сублимированные продукты",
+            "clicked": false
+        },
+        {
+            "title": "Консервированные овощи в реторт-упаковке",
+            "clicked": false
+        },
+        {
+            "title": "Многоразовые упаковки и посуда",
+            "clicked": false
+        },
+        {
+            "title": "Палатка",
+            "clicked": false
+        },
+        {
+            "title": "Спальный мешок",
+            "clicked": false
+        },
+        {
+            "title": "Чехол на рюкзак",
+            "clicked": false
+        },
+        {
+            "title": "Биоразлагаемый шампунь и мыло",
+            "clicked": false
+        },
+        {
+            "title": "Зубная паста и щетка",
+            "clicked": false
+        },
+        {
+            "title": "Расческа",
+            "clicked": false
+        },
+        {
+            "title": "Треккинговая обувь",
+            "clicked": false
+        },
+        {
+            "title": "Аптечка",
+            "clicked": false
+        }
+    ],
+    [
+        {
+            "title": "Шлем",
+            "clicked": false
+        },
+        {
+            "title": "Очки",
+            "clicked": false
+        },
+        {
+            "title": "Термобелье",
+            "clicked": false
+        },
+        {
+            "title": "Утепляющая одежда",
+            "clicked": false
+        },
+        {
+            "title": "Мембранная куртка",
+            "clicked": false
+        },
+        {
+            "title": "Велоперчатки",
+            "clicked": false
+        },
+        {
+            "title": "Велообувь",
+            "clicked": false
+        },
+        {
+            "title": "Палатка",
+            "clicked": false
+        },
+        {
+            "title": "Спальный мешок",
+            "clicked": false
+        },
+        {
+            "title": "Рюкзак для велика",
+            "clicked": false
+        },
+        {
+            "title": "Шампунь и мыло",
+            "clicked": false
+        },
+        {
+            "title": "Зубная паста и щетка",
+            "clicked": false
+        },
+        {
+            "title": "Аптечка",
+            "clicked": false
+        }
+    ]
+]

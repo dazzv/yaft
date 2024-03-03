@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Зонтик",
+        "clicked": false
+    },
+    {
+        "title": "Вкладыш в мешок для сна",
+        "clicked": false
+    },
+    {
+        "title": "Набор пакетов для вещей",
+        "clicked": false
+    },
+    {
+        "title": "Набор емкостей",
+        "clicked": false
+    },
+    {
+        "title": "Повербанк",
+        "clicked": false
+    }
+]

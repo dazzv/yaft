@@ -1,0 +1,176 @@
+[
+    {
+        "city": "Самара",
+        "infrastructure": [
+            {
+                "icon": "/img/infrastructure/samara/lotte.png",
+                "name": "Лотте",
+                "type": "Гостиница",
+                "location": "Самара"   
+            },
+            {
+                "icon": "/img/infrastructure/samara/samara_kos.png",
+                "name": "Самара Космическая",
+                "type": "Музей, выставочный центр",
+                "location": "Самара"   
+            },
+            {
+                "icon": "/img/infrastructure/samara/samara_zhd.png",
+                "name": "Железнодорожный вокзал",
+                "type": "Железнодорожный вокзал",
+                "location": "Самара"   
+            },
+            {
+                "icon": "/img/infrastructure/samara/samara_aero.png",
+                "name": "Курумоч",
+                "type": "Аэропорт",
+                "location": "Самара"   
+            }
+        ]
+    },
+    {
+        "city": "Казань",
+        "infrastructure": [
+            {
+                "icon": "/img/infrastructure/kazan/gavan.png",
+                "name": "Гавань",
+                "type": "Гостиница",
+                "location": "Казань"   
+            },
+            {
+                "icon": "/img/infrastructure/kazan/kazan_ermitazh.png",
+                "name": "Эрмитаж-Казань",
+                "type": "Музей, выставочный центр",
+                "location": "Казань"   
+            },
+            {
+                "icon": "/img/infrastructure/kazan/kazan_zhd.png",
+                "name": "Казань-1",
+                "type": "Железнодорожный вокзал",
+                "location": "Казань"    
+            },
+            {
+                "icon": "/img/infrastructure/kazan/kazan_aero.png",
+                "name": "Международный аэропорт Казань",
+                "type": "Аэропорт",
+                "location": "Казань"   
+            }
+        ]
+    },
+    {
+        "city": "Москва",
+        "infrastructure": [
+            {
+                "icon": "/img/infrastructure/moscow/radisson.jpg",
+                "name": "Radisson Collection Hotel, Moscow",
+                "type": "Гостиница",
+                "location": "Москва"   
+            },
+            {
+                "icon": "/img/infrastructure/moscow/muzei_zapovednik.png",
+                "name": "Музей-заповедник Коломенское",
+                "type": "Музей, выставочный центр",
+                "location": "Москва"   
+            },
+            {
+                "icon": "/img/infrastructure/moscow/kreml.png",
+                "name": "Московский Кремль",
+                "type": "Музей, достопримечательность",
+                "location": "Москва"    
+            },
+            {
+                "icon": "/img/infrastructure/moscow/domododevo.png",
+                "name": "Международный аэропорт Домодедово",
+                "type": "Аэропорт",
+                "location": "Москва"   
+            }
+        ]
+    },
+    {
+        "city": "Барнаул",
+        "infrastructure": [
+            {
+                "icon": "/img/infrastructure/barnaul/barnaul_hotel.png",
+                "name": "Гостиница Барнаул",
+                "type": "Гостиница",
+                "location": "Барнаул"   
+            },
+            {
+                "icon": "/img/infrastructure/barnaul/kgbu.png",
+                "name": "Государственный музей истории, литературы, искусства и культуры",
+                "type": "Музей",
+                "location": "Барнаул"   
+            },
+            {
+                "icon": "/img/infrastructure/barnaul/teatr_barnaul.png",
+                "name": "Алтайский государственный музыкальный театр",
+                "type": "Театр",
+                "location": "Барнаул"    
+            },
+            {
+                "icon": "/img/infrastructure/barnaul/barnaul_aero.png",
+                "name": "Международный аэропорт",
+                "type": "Аэропорт",
+                "location": "Барнаул"   
+            }
+        ]
+    },
+    {
+        "city": "Симферополь",
+        "infrastructure": [
+            {
+                "icon": "/img/infrastructure/simferopol/simferopol_hotel.png",
+                "name": "Зеленый театр",
+                "type": "Гостиница",
+                "location": "Симферополь"   
+            },
+            {
+                "icon": "/img/infrastructure/simferopol/muzei_zapovednik.png",
+                "name": "Историко-археологический музей-заповедник",
+                "type": "Музей, культурный центр",
+                "location": "Симферополь"   
+            },
+            {
+                "icon": "/img/infrastructure/simferopol/simferopol_zhd.png",
+                "name": "Железнодорожный вокзал Симферополь",
+                "type": "Железнодорожный вокзал",
+                "location": "Симферополь"    
+            },
+            {
+                "icon": "/img/infrastructure/simferopol/simferopol_aero.png",
+                "name": "Международный аэропорт Симферополь",
+                "type": "Аэропорт",
+                "location": "Симферополь"   
+            }
+        ]
+    },
+    {
+        "city": "Астрахань",
+        "infrastructure": [
+            {
+                "icon": "/img/infrastructure/astrakhan/azimut.png",
+                "name": "AZIMUT Сити Отель Астрахань",
+                "type": "Гостиница",
+                "location": "Астрахань"   
+            },
+            {
+                "icon": "/img/infrastructure/astrakhan/astrakhan_kreml.png",
+                "name": "Астраханский кремль",
+                "type": "Музей, культурный центр",
+                "location": "Астрахань"   
+            },
+            {
+                "icon": "/img/infrastructure/astrakhan/astrakhan_teatr.png",
+                "name": "Астраханский государственный театр оперы и балета",
+                "type": "Театр, творческий коллектив",
+                "location": "Астрахань"    
+            },
+            {
+                "icon": "/img/infrastructure/astrakhan/astrakhan_aero.png",
+                "name": "Международный аэропорт Астрахань",
+                "type": "Аэропорт",
+                "location": "Астрахань"   
+            }
+        ]
+    }
+]
