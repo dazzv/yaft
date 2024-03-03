@@ -1,10 +1,8 @@
 # Yaft
-## Мультиплатформенное Веб-приложение(PWA)
+## Мультиплатформенное Веб-приложение(PWA) / Pet-проект
 ### Ссылка на сервис: https://yaft.netlify.app/
 
-![Yaft](https://raw.githubusercontent.com/dazzv/yaft/main/service_images/Desktop%20-%202.png)
-
-![Yaft](https://raw.githubusercontent.com/dazzv/yaft/main/service_images/Стартовый%20экран.png)
+![Yaft](https://raw.githubusercontent.com/dazzv/yaft/main/Group.png) 
 
 ## Project setup
 ```
