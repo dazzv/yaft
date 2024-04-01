@@ -83,7 +83,7 @@
           > {{ option }}</option>
       </select>
 
-      <input v-model="travelData.travelDate" class="travel_date" type="date" name="travel_date" :min="minDate" max="2023-12-31">
+      <input v-model="travelData.travelDate" class="travel_date" type="date" name="travel_date" :min="minDate" max="2025-12-31">
       
       <div>
         <h3 class="duration_title">Длительность: {{travelData.duration}} суток</h3>
@@ -277,6 +277,7 @@ export default {
 
     mounted() {
       this.minDate = new Date().toISOString().slice(0,10) // при создание приложение беру и устанавливая минимальную дату для календаря
+      this.travelData.travelDate = this.minDate
       this.clientHeight =  document.documentElement.clientHeight;
     },
 
