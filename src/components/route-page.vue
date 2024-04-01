@@ -277,7 +277,12 @@ export default {
 
     mounted() {
       this.minDate = new Date().toISOString().slice(0,10) // при создание приложение беру и устанавливая минимальную дату для календаря
-      this.travelData.travelDate = this.minDate
+      
+      // 
+      this.travelData.travelDate = this.minDate;
+      this.travelData.selectedType = 2;
+      this.isClicked = 2;
+
       this.clientHeight =  document.documentElement.clientHeight;
     },
 
