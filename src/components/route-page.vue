@@ -217,7 +217,7 @@ export default {
 
       travelData: {
         selectedType: -1,
-        city: "",
+        city: "Барнаул",
         travelDate: "",
         duration: "6",
         travelEndDate: "",
