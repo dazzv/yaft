@@ -5,7 +5,7 @@ import routePage from '../components/route-page.vue'
 import weatherPage from '../components/weather-page.vue'
 import listPage from '../components/list-page.vue'
 import guidePage from '../components/guide-page.vue'
-import profilePage from '../components/profile-page.vue'
+import monitoringPage from '../components/monitoring-page.vue'
 
 
 const routes = [
@@ -39,9 +39,9 @@ const routes = [
     component: guidePage,
   },
   {
-    path: '/profile',
-    name: 'profilePage',
-    component: profilePage,
+    path: '/monitoring',
+    name: 'monitoringPage',
+    component: monitoringPage,
   },
 
 

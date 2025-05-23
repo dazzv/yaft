@@ -13,13 +13,14 @@ $mintbasic: #1E877E;
     user-select: none;
 
     ::-webkit-scrollbar {
-      width: 0;
+      width: 5px;
+      height: 5px;
       // background-color: #;
       border: none;
     }
     ::-webkit-scrollbar-thumb {
       width: 5px;
-      height: 10px;
+      height: 5px;
       background-color: #5CD1B5;
       // color: #000;
     }
@@ -786,6 +787,80 @@ $mintbasic: #1E877E;
 }
 
 // -- profile -- //
+.monitoring_page{
+  height: 100vh;
+
+  .health_block_img{
+    width: auto;
+    height: 140px;
+    position: absolute;
+    right: 0;
+    bottom: 11px;
+    // padding: 0 20px 0 0;
+
+    @media screen and (min-width: 500px) {
+      right: 10%;
+    }
+    @media screen and (min-width: 700px) {
+      right: 18%;
+    }
+    @media screen and (min-width: 1300px) {
+      right: 25%;
+    }
+  }
+
+  .selected_days{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    gap: 10px;
+  }
+  .monitoring_page_main{
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    min-height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    transform: translate(0, -10px);
+  }
+  .day{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: ui-rounded;
+    border: $mintbasic solid 1px;
+
+    .date{
+      font-size: 24px;
+    }
+    .month{
+      font-size: 14px;
+    }
+  }
+  .selected_day{
+    background: $mintbasic;
+    color: white;
+  }
+  .blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+
+    .block{
+      height: 200px;
+      background: $mintlight;
+      border-radius: 10px;
+      text-align: center;
+
+    }
+  }
+
+}
 // .sign_up {
 //   position:absolute;
 //   right: 20px;

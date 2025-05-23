@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <section class="route_page">
     <div v-if="notice" class="notice_block">
       <h3>Пожалуйста сначала заполните<br />необходимые поля!</h3>
