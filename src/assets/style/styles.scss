@@ -28,7 +28,7 @@ $mintbasic: #1E877E;
 
 .container {
     width: 100%;
-    padding: 0 20px 0;
+    padding: 0 10px 0;
     margin: 0 auto;
 
     @media screen and (min-width: 500px) {
@@ -836,26 +836,45 @@ $mintbasic: #1E877E;
     .date{
       font-size: 24px;
     }
-    .month{
-      font-size: 14px;
-    }
   }
   .selected_day{
     background: $mintbasic;
     color: white;
   }
   .blocks{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     align-items: center;
 
     .block{
-      height: 200px;
-      background: $mintlight;
+      height: 100px;
+      background: #FFFFFF;
+      box-shadow: 5px 5px 10px #C8D5E4, -5px -5px 8px #F4F9FF;
       border-radius: 10px;
       text-align: center;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
 
+      .block-text{
+        text-align: start;
+
+        .block-value{
+          font-size: 50px;
+          padding: 7px 0;
+        }
+        .block-value-about{
+          font-size: 18px;
+        }
+      }
+      .block-svg{
+        height: 100%;
+        fill: none;
+        stroke: $mintlight;
+      }
     }
   }
 
