@@ -30,3 +30,30 @@ if (process.env.NODE_ENV === 'production') {
     }
   })
 }
+
+self.addEventListener('push', function(event) {
+  let note = event.data.json();
+
+  // let note = {
+  //   "title": "Обновлено 54",
+  //   "body": "Изменено поле <strong>Состояние недвижимости</strong><br>Старое значение: Без отделки, Новое значение: Отделка от застройщика<br>",
+  //   "data":
+  //     {
+  //       "id": "6deac8c4-315e-4df0-9c5a-52259b155fc2",
+  //       "link": "/deals/1",
+  //       "date": "2025-04-11T08:07:31.844136Z"
+  //     }
+  // };
+
+  event.waitUntil(
+    self.registration.showNotification(note.title, {
+      body: note.body.replace(/<br\s*\/?>/gi, "\n").replace(/<[^>]+>/g, ""),
+      icon: '/logo.png',
+      tag: note.data.link || 'default', // Группировка(заменяет старое уведомление) по объекту. Т.е в рамках одной сделки будет только одно уведомление с последними изменениями
+      renotify: true, //  вызывает звук или вибрацию
+      data: {
+        link: note.data.link,
+      },
+    })
+  );
+});
