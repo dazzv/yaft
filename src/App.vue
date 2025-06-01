@@ -1,7 +1,7 @@
 <template>
   <install-app></install-app>
   <div v-if="notice" class="notice_block"> 
-      <h3>Пожалуйста сначала заполните<br>необходимые поля!</h3>
+      <h3>Заполните поля и нажмите<br>"Поехали"</h3>
   </div>
 
   <router-view/>
@@ -81,7 +81,15 @@ export default {
 
   components: {
     InstallApp,
-},
+  },
+
+  mounted() {
+    if(!this.fullTravelData.selectedType || !this.fullTravelData.city || !this.fullTravelData.travelDate){
+      this.$router.push({ path: '/route' });
+      this.showNotice();
+    }
+  },
+
   watch: {
     '$route': {  // слежу за роутером чтобы скрыть иконки в начальном экране
       handler: 'watchRoute', // эти строчки чтобы без обновления страницы тоже можно было следить
@@ -98,7 +106,7 @@ export default {
 
   methods: {
     watchRoute() { // слежу за роутером чтобы скрыть иконки в начальном экране
-      if(this.$route.name === "startPage" | this.$route.name === undefined){
+      if(this.$route.name === "startPage" || this.$route.name === undefined){
         this.isNotStartPage = false
       } else {
         this.isNotStartPage = true
@@ -108,9 +116,9 @@ export default {
       if(this.$route.name === "routePage"){ // 
           this.selectedPage = 0;
       }
-      else if(this.$route.name === "profilePage"){
-        this.selectedPage = 4;
-      }
+      // else if(this.$route.name === "profilePage"){
+      //   this.selectedPage = 4;
+      // }
 
       if(this.fullTravelData.selectedType >= 0 && this.fullTravelData.city !== "" && this.fullTravelData.travelDate !== "")
       {
@@ -123,6 +131,9 @@ export default {
         else if(this.$route.name === "guidePage"){
           this.selectedPage = 3;
         }
+        else if(this.$route.name === "monitoringPage"){
+          this.selectedPage = 4;
+        }
         
       } else {
         // console.log("Не заполнена | App")
@@ -130,40 +141,41 @@ export default {
     },
 
     async selectPage(index) {
-      this.selectedPage = index;
-
-      if(this.selectedPage == 0) {
-          this.$router.push('/route')
-      }
-      if(this.selectedPage == 4) {
-        this.$router.push({ path: '/monitoring' })
-      }
-      
+      // Если данные заполнены, то переключаем на другие страницы
       if(this.fullTravelData.selectedType >= 0 && this.fullTravelData.city !== "" && this.fullTravelData.travelDate !== ""){
-        if(this.selectedPage == 0) {
-          this.$router.push('/route')
+        this.selectedPage = index;
+
+        if(this.selectedPage === 0) {
+          this.$router.push({ path: '/route' })
         }
-        if(this.selectedPage == 1) {
+        if(this.selectedPage === 1) {
           this.$router.push('/weather')
         }
-        else if(this.selectedPage == 2) {
+        else if(this.selectedPage === 2) {
           this.$router.push({ path: '/list' })
         }
-        else if(this.selectedPage == 3) {
+        else if(this.selectedPage === 3) {
           this.$router.push({ path: '/guide'})
+        }
+        else if(this.selectedPage === 4) {
+          this.$router.push({ path: '/monitoring' })
         }
         
         this.notice = false;
-        } else {
-          if(index != 0 && index != 4){
-            this.notice = true;
-          }
-          
-        setTimeout(() => {
-          this.notice = false;
-        }, 3000); 
+      } else {
+        this.$router.push('/route')
+        this.selectedPage = 0;
+
+        this.showNotice()
       }
       
+    },
+
+    showNotice() {
+      this.notice = true;
+      setTimeout(() => {
+        this.notice = false;
+      }, 3000);
     },
 
     ...mapActions({
