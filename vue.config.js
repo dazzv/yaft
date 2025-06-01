@@ -6,7 +6,10 @@ module.exports = defineConfig({
     name: "YAFT - your travel advisor",
     themeColor: "#16615A",
 
+    workboxPluginMode: 'InjectManifest',
+
     workboxOptions: {
+      swSrc: 'public/service-worker.js',
       exclude: [/_redirects/]
     }
   }
