@@ -6,6 +6,10 @@ self.addEventListener('push', function(event) {
       note.title,
       {
         body: note.body.replace(/<br\s*\/?>/gi, "\n").replace(/<[^>]+>/g, ""),
+        icon: '/logo.png',
+        data: {
+          link: 'google.com',
+        },
       }
     )
   )
