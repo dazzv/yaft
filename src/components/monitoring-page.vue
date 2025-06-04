@@ -15,10 +15,10 @@ const noiseLevel = ref(0)
 
 onMounted(() => {
   getPulse(70, 80, 3600, pulse)
-  getTemperature(36.1, 36.8, 10000, temperature)
+  getTemperature(36.1, 36.8, 60000, temperature)
   getOxygenLevel(97, 100, 15000, oxygenLevel)
   getPressure(110, 120, 15000, systolicPressure, 60, 80, diastolicPressure)
-  getNoiseLevel(47, 52, 10000, noiseLevel)
+  getNoiseLevel(47, 80, 30000, noiseLevel)
 })
 
 const getRandomValue = (min, max) => {
@@ -63,19 +63,19 @@ const getNoiseLevel = (min, max, intervalMs, object) => {
   }, intervalMs)
 }
 
-watch(pulse, (newValue) => {
-  if (newValue > 70) showPush(pulse)
+watch(noiseLevel, (newValue) => {
+  if (newValue > 70) showPush(newValue)
 })
 
 // Это только ради теста, а так пуши дергаются с бекенда
-const showPush = (pulse) => {
+const showPush = (noise) => {
   Notification.requestPermission().then((result) => {
     if (result === "granted") { // Посмотрим разрешено ли показать уведомления
       navigator.serviceWorker.ready.then((registration) => {
         registration.showNotification(
-          'Пульс',
+          'Осторожно',
           {
-            body: `Ваш пульс равен ${pulse}`,
+            body: `Уровень шума вокруг ${noise} дб.`,
             icon: "./logo.png",
           });
       });
